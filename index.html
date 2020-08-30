@@ -32,7 +32,7 @@
 
                 if (image.includes('animedao.com')) {
                     dataParsed[x].image = image.replace('.com','.to');
-                    dataParsed[x].link = link.replace('animedaoto','animedao.to');
+                    dataParsed[x].image = image.replace('animedaoto','animedao.to');
                 }
             }
             var fixedFavorites = JSON.stringify(dataParsed);
