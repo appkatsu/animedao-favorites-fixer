@@ -25,11 +25,14 @@
                 var image = dataParsed[x].image;
 
                 if (link.includes('animedao.com')) {
-                    dataParsed[x].link = link.replace('.com','to');
+                    dataParsed[x].link = link.replace('.com','.to');
+                    dataParsed[x].link = link.replace('animedaoto','animedao.to');
+
                 }
 
                 if (image.includes('animedao.com')) {
-                    dataParsed[x].image = image.replace('.com','to');
+                    dataParsed[x].image = image.replace('.com','.to');
+                    dataParsed[x].link = link.replace('animedaoto','animedao.to');
                 }
             }
             var fixedFavorites = JSON.stringify(dataParsed);
